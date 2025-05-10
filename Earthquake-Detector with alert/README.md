@@ -24,7 +24,7 @@ The Arduino reads analog data from the ADXL335 sensor and checks for sudden chan
 
 ## Setup Instructions
 
-1. Install Python & pip
+###1. Install Python & pip
 
 Ensure Python and pip are installed on your system. If not, follow these steps:
 
@@ -33,13 +33,13 @@ Ensure Python and pip are installed on your system. If not, follow these steps:
   ```bash
   sudo apt install python3-pip   # For Ubuntu/Linux
 
-2. Install Required Libraries
+###2. Install Required Libraries
 
 Run the following command to install the necessary Python libraries for sending email alerts:
 
 pip install smtplib
 
-3.Circuit Connections
+###3.Circuit Connections
 
 ADXL335 Accelerometer:
 
