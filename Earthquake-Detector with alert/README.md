@@ -13,6 +13,7 @@ This project detects seismic activity using an ADXL335 accelerometer connected t
 - Jumper Wires
 - Breadboard
 - 220-ohm resistor
+- Computer running python
 
 ---
 
