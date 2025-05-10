@@ -18,7 +18,27 @@ This project detects seismic activity using an ADXL335 accelerometer connected t
 
 ## Working
 
-The Arduino reads analog data from the ADXL335 sensor and checks for sudden changes in vibration. If a threshold is exceeded, it sends a signal through Serial. A Python script running on a PC reads this data and sends an email alert.
+This Earthquake Detector project is designed to detect seismic activity using the ADXL335 accelerometer and alert the user through visual, audible, and remote notifications.
+
+### Step-by-Step Working:
+
+1. The *Arduino* continuously reads analog data from the *ADXL335 accelerometer* across the X, Y, and Z axes.
+
+2. It calculates the *magnitude of vibration* using the formula:
+
+magnitude = sqrt(X^2 + Y^2 + Z^2)
+
+3. If the calculated magnitude exceeds a predefined *threshold value* (indicating a potential earthquake or strong vibration):
+
+- The *LED* starts blinking to provide a visual alert.
+- The *buzzer* sounds to provide an audible alert.
+- A *Serial message* is sent containing the magnitude value.
+
+4. A *Python script*, running on a connected PC, reads the Serial data from the Arduino.
+
+5. When the script detects that the threshold has been crossed, it sends an *email alert* to a predefined email address. The email includes the *detected magnitude* of the vibration.
+
+This multi-level alert system ensures that both local (LED and buzzer) and remote (email notification) alerts are activated in the event of seismic activity.
 
 ---
 
