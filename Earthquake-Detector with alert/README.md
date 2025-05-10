@@ -1,4 +1,4 @@
-# Earthquake Detector using Arduino and Python
+# Earthquake Detector with email-alert using Arduino and Python
 
 This project detects seismic activity using an ADXL335 accelerometer connected to an Arduino Uno. If vibration exceeds a threshold, an alarm is triggered and an email alert is sent using a Python script.
 
