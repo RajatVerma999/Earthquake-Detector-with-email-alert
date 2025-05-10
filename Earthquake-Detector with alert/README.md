@@ -22,6 +22,52 @@ The Arduino reads analog data from the ADXL335 sensor and checks for sudden chan
 
 ---
 
+## Setup Instructions
+
+1. Install Python & pip
+
+Ensure Python and pip are installed on your system. If not, follow these steps:
+
+- *Windows*: Download and install Python from [python.org](https://www.python.org/downloads/).
+- *Linux/Mac*: Use the following command to install pip (if not already installed):
+  ```bash
+  sudo apt install python3-pip   # For Ubuntu/Linux
+
+2. Install Required Libraries
+
+Run the following command to install the necessary Python libraries for sending email alerts:
+
+pip install smtplib
+
+3.Circuit Connections
+
+ADXL335 Accelerometer:
+
+VCC → 5V on Arduino
+
+GND → GND on Arduino
+
+X, Y, Z pins → Analog pins A0, A1, A2 on Arduino (for vibration detection)
+
+
+LED:
+
+Anode (long pin) → Digital pin 13 on Arduino
+
+Cathode (short pin) → 220-ohm Resistor → GND on Arduino
+
+
+Buzzer:
+
+Positive (longer pin) → Digital pin 12 on Arduino
+
+Negative (shorter pin) → GND on Arduino
+
+
+You can refer to the circuit diagram for a more detailed illustration of the wiring.
+
+---
+
 ## Arduino Code
 
 File: File: [Arduino Code/earthquake_detector.ino](Arduino%20Code/earthquake_detector.ino)
