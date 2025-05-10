@@ -1,4 +1,4 @@
-# Earthquake Detector with email-alert using Arduino and Python
+# Earthquake Detector with email alert using Arduino and Python
 
 This project detects seismic activity using an ADXL335 accelerometer connected to an Arduino Uno. If vibration exceeds a threshold, an alarm is triggered and an email alert is sent using a Python script.
 
@@ -26,7 +26,7 @@ This Earthquake Detector project is designed to detect seismic activity using th
 
 2. It calculates the *magnitude of vibration* using the formula:
 
-magnitude = sqrt(X^2 + Y^2 + Z^2)
+   magnitude = sqrt(X^2 + Y^2 + Z^2)
 
 3. If the calculated magnitude exceeds a predefined *threshold value* (indicating a potential earthquake or strong vibration):
 
