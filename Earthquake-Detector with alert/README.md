@@ -39,7 +39,7 @@ Run the following command to install the necessary Python libraries for sending 
 
 pip install smtplib
 
-### 3.Circuit Connections
+### 3. Circuit Connections
 
 ADXL335 Accelerometer:
 
