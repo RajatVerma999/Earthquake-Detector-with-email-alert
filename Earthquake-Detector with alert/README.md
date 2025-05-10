@@ -41,6 +41,15 @@ This Earthquake Detector project is designed to detect seismic activity using th
 
 This multi-level alert system ensures that both local (LED and buzzer) and remote (email notification) alerts are activated in the event of seismic activity.
 
+> **Important Note:**  
+> The buzzer can generate small physical vibrations when it sounds, especially on lightweight setups like a breadboard. These vibrations may be picked up again by the ADXL335 sensor, causing a **feedback loop** where the sensor continuously detects motion.  
+> As a result, the system may **keep triggering the alarm** (blinking LED and buzzer) even after the actual vibration has stopped.  
+> 
+> To avoid this:
+> - Place the buzzer and sensor on **separate surfaces**.
+> - Use a **rubber pad or foam** under the sensor to dampen false detection.
+> - Optionally, **disconnect the buzzer during testing**, or add a **delay in code** to allow the system to stabilize after one alert.
+
 ---
 
 ## Setup Instructions
