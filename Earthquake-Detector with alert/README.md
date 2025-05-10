@@ -39,8 +39,6 @@ File: File: [Python Code/earthquake_alert_public.py](Python%20Code/earthquake_al
 ## Setup Image
 ![Setup Image](./Setup%20Image/earthquake_detector_setup.jpg)
 
-
-
 > Note: Image may not be very clear, but it shows the real project setup.
 
 ---
